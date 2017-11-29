@@ -45,6 +45,13 @@ If you want to try calibrating your own sources:
 - set exposure and aperture appropriately to avoid saturation, yet have a broad enough range of values
 - capture as many checkerboard poses as possible
 
+## Important note for near-light position estimation 
+
+For completeness, these codes can be used to refine the position of the LED. Note however that they are not intended to be considered as a "good" tool for accurately estimating the position. As discussed in [1,2], we rather advise to calibrate position using the standard specular balls-based procedure (or measure manually, if it is simple). We leave in these codes the option to refine position using checkerboard because we find it interesting, but use at your own risk.   
+
+## Less important note on RGB images 
+
+In [1,2], we describe the procedure for greylevel images, and then discuss simple extension to color using per-channel calibration. In the provided codes a somewhat more sound alternative based on nonlinear refinement is employed. Results are not so much different anyways, but we believe it is more justified from a mathematical perspective.  
 
 ## Dependencies
 
